@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+
+# Secrets (YouTube OAuth)
+credentials.json
+token.json
+facebook.json
+.env
+.env.*
+
+# Rendered output and generated media
+out/
+audio/out/
+audio/_cache/
+audio/*.wav
+voice/*.mp3
+voice/*.wav
+*.mp4
+*.mov
+*.wav
+
+# Remotion / Puppeteer temp
+remotion-tmp/
+remotion-webpack-bundle-*/
+puppeteer_dev_chrome_profile-*/
+.remotion/
+
+# Logs
+npm.log
+*.log
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Skill folder is its own git repo; private style references
+.claude/skills/
+.claude/settings.local.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+/src

@@ -1,0 +1,21 @@
+{
+  "name": "lumenstick-stick-story",
+  "version": "1.0.0",
+  "description": "Stick Story Animation: long-form 16:9 stick figure story videos (business, tech, history, \"what if\" stories). Bean-shaped stick figures in detailed flat sets, a new shot every few seconds with slow push-ins, props and labels that tell the story, word-pop title cards, generated music and SFX, two thumbnails and post text. Bring a voiceover, a script or just an idea.",
+  "author": {
+    "name": "Lumenstick Studio"
+  },
+  "license": "MIT",
+  "keywords": [
+    "video",
+    "animation",
+    "stick figure",
+    "long-form",
+    "explainer",
+    "documentary",
+    "business story",
+    "remotion",
+    "youtube",
+    "faceless channel"
+  ]
+}
