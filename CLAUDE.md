@@ -34,6 +34,10 @@ below) unless they explicitly ask for a different skill (e.g. `claude-animated-s
 `huashu-art-motion`). This overrides the older "use the `short` skill" default. The script, storyboard and gate steps
 above still apply. Educational content must stay accurate: when in doubt about a fact, verify it before voicing it.
 
+## Curion short setup (trigger phrase)
+
+When the user says **"start curion short setup"** (in a new session or any time), invoke the `curion-short-setup` skill (`.claude/skills/curion-short-setup/SKILL.md`) and run the whole process: preflight + tools install, topic, facts from primary sources, script and storyboard approval, build the Tall Tale 3D short, QA, upload to Curion YouTube and Facebook as scheduled videos (standing authorization, 2026-11-23), save the source into the skill, clean up the working folder (keep only the final mp4), and finish by giving the user the **local folder path of the final mp4** so they can recheck it.
+
 ## Project Locations
 
 - Install skills and their dependencies locally inside THIS project folder (e.g., `.claude/skills/`, local node_modules). Never install globally unless explicitly asked.
@@ -46,6 +50,7 @@ above still apply. Educational content must stay accurate: when in doubt about a
 - Length: minimum 60 s, maximum 120 s. Script at ~3.7 words/s (about 220–440 words). Check the final duration with ffprobe before delivery.
 - Every video must ship with generated audio and burned-in subtitles: generate the voice (word timings), the music and SFX mix, mux the mix into the mp4 (no silent video), and burn the subtitles into the picture, with an `.srt` alongside. Subtitles are karaoke-style: the word being spoken is highlighted in a contrasting colour (yellow `&H00F5FF&` in ASS BGR = #FFF500; the rest white), switching word by word exactly on its `words.json` start time. Verify with ffprobe (audio stream present, not silent) and a frame check (captions visible, current word coloured and in sync) before delivery.
 - Deliverables for every video: rendered mp4, burned-in captions/subtitles (an `.srt` alongside it), thumbnail, viral post copy, and a lessons file.
+- Every video ends with a spoken call to action as its last script line: "Follow and subscribe for more videos." (user request 2026-11-20; it is captioned, so no extra on-screen text). Count it toward the 60 s minimum. Videos made before this date (e.g. "Why do we yawn...") do not have it.
 - Before a full render, confirm the visual style. If a reference image is provided (e.g., egypt.gif), match it. Render a 5–10s sample first.
 
 ## Render Pipeline Rules
@@ -53,6 +58,7 @@ above still apply. Educational content must stay accurate: when in doubt about a
 - Validate shot specs against required prop fields (e.g., bars, hub, book) before rendering.
 - Run the delivery gates on a short sample before committing to a full render. If a gate such as fast-motion % fails, adjust motion parameters instead of re-rendering blindly.
 - For flicker, check z-fighting and canvas-state determinism before other causes.
+- Tall Tale 3D builds (and any 3D short with cut-out people): before every render run `node tools/capture.mjs toons` (no hat/hand sliced by the cut-out canvas: the "hat cut in half" bug, fixed 2026-11-23), `check` and `guard`; they must be clean of z-fight errors, "camera zoomed in too far" (head wider than 52% of the frame) and "person overlaps furniture or a wall" (body hidden, walking through a sofa). Look at the contact sheet for seated people, cameras and thought bubbles, run the luma/flicker measurement on the final mp4 and state the result (user request 2026-11-22; lessons 45-48; `src/core/qa.js`).
 - Run grep from the project root.
 - A PreToolUse hook (`.claude/settings.json` → `scripts/hooks/pre-render-check.cjs`) runs `npm run tsc` before any `remotion render` command and blocks the render if it fails.
 

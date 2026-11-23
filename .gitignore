@@ -43,4 +43,7 @@ __pycache__/
 Thumbs.db
 .vscode/
 
-/src
+/srctoken_*.json
+token_analytics.json
+token_blogger.json
+token_gamepulse.json

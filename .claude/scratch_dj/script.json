@@ -1,0 +1,106 @@
+{
+  "title": "Where Does Your Food Go After The Stomach?",
+  "voice": "edge-tts en-US-AndrewNeural -2%",
+  "speed": 1.0,
+  "lead": 0.35,
+  "outro": 1.2,
+  "gap": 0.3,
+  "music": "data/music.wav",
+  "music_db": -22,
+  "sources": [
+    "NIDDK, Your Digestive System & How It Works (small intestine absorbs most nutrients into the blood; liver makes bile, gallbladder stores/releases it; lymph vessels take up fatty acids; large intestine absorbs water, bacteria help finish digestion): niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works",
+    "Textbook-level, to verify before voicing: pancreatic enzymes (starch to sugars, protein to amino acids, fat to fatty acids), bile emulsifies fat, villi, fats via lymph before the blood, ATP from glucose, fiber fermentation by gut bacteria to short-chain fatty acids that feed colon cells (NIDDK did not mention short-chain fatty acids, so the script says 'help feed the cells lining your colon')",
+    "User-supplied source script (Parts 3-5 of the digestion series), rewritten here as one new script",
+    "Dramatised, not factual: the person and the 3D body, villi and bacteria are illustrative and schematic"
+  ],
+  "lines": [
+    {
+      "text": "Your stomach has turned your lunch into a thick soup.",
+      "caps": "Your stomach has turned your lunch into a thick soup."
+    },
+    {
+      "text": "But your body still can't use most of it.",
+      "caps": "But your body still can't use most of it."
+    },
+    {
+      "text": "The pieces are far too big.",
+      "caps": "The pieces are far too big."
+    },
+    {
+      "text": "So the soup moves into the small intestine, where two helpers join in.",
+      "caps": "So the soup moves into the small intestine where two helpers join in."
+    },
+    {
+      "text": "Your pancreas sends enzymes that chop starches, proteins and fats into smaller pieces.",
+      "caps": "Your pancreas sends enzymes that chop starches proteins and fats into smaller pieces."
+    },
+    {
+      "text": "Your liver makes bile, stored in the gallbladder, which breaks big fat blobs into tiny droplets so the enzymes can reach them.",
+      "caps": "Your liver makes bile stored in the gallbladder which breaks big fat blobs into tiny droplets so the enzymes can reach them."
+    },
+    {
+      "text": "Starches become simple sugars, proteins become amino acids, and fats become fatty acids.",
+      "caps": "Starches become simple sugars proteins become amino acids and fats become fatty acids."
+    },
+    {
+      "text": "Now the pieces are small enough to get in.",
+      "caps": "Now the pieces are small enough to get in."
+    },
+    {
+      "text": "The inside of your small intestine is covered with millions of tiny fingers, called villi.",
+      "caps": "The inside of your small intestine is covered with millions of tiny fingers called villi."
+    },
+    {
+      "text": "They soak up the nutrients and pass them on to your blood.",
+      "caps": "They soak up the nutrients and pass them on to your blood."
+    },
+    {
+      "text": "Sugars and amino acids slip into tiny blood vessels, and many travel to your liver first, to be processed or stored.",
+      "caps": "Sugars and amino acids slip into tiny blood vessels and many travel to your liver first to be processed or stored."
+    },
+    {
+      "text": "Fats take a detour through lymph vessels, before they reach the blood.",
+      "caps": "Fats take a detour through lymph vessels before they reach the blood."
+    },
+    {
+      "text": "Then your cells burn sugar to make ATP, the energy that powers everything from your brain to your muscles.",
+      "caps": "Then your cells burn sugar to make ATP the energy that powers everything from your brain to your muscles."
+    },
+    {
+      "text": "But not everything gets absorbed.",
+      "caps": "But not everything gets absorbed."
+    },
+    {
+      "text": "The leftovers move on into your large intestine.",
+      "caps": "The leftovers move on into your large intestine."
+    },
+    {
+      "text": "Here, billions of bacteria feast on fiber that you can't digest on your own.",
+      "caps": "Here billions of bacteria feast on fiber that you can't digest on your own."
+    },
+    {
+      "text": "They make substances that help feed the cells lining your colon.",
+      "caps": "They make substances that help feed the cells lining your colon."
+    },
+    {
+      "text": "Meanwhile, the large intestine pulls out water, so the waste slowly turns solid.",
+      "caps": "Meanwhile the large intestine pulls out water so the waste slowly turns solid."
+    },
+    {
+      "text": "It waits in your rectum until your body is ready to let it go.",
+      "caps": "It waits in your rectum until your body is ready to let it go."
+    },
+    {
+      "text": "From mouth to stomach to intestines, food only becomes part of you once it's small enough to get in.",
+      "caps": "From mouth to stomach to intestines food only becomes part of you once it's small enough to get in."
+    },
+    {
+      "text": "And your body does all of this, without you even thinking about it.",
+      "caps": "And your body does all of this without you even thinking about it."
+    },
+    {
+      "text": "Follow for more amazing things happening inside your body.",
+      "caps": "Follow for more amazing things happening inside your body."
+    }
+  ]
+}
